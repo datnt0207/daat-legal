@@ -28,6 +28,8 @@ only data we receive is usage statistics and crash reports that are not linked t
 only to save the image; it does not read your library.</li>
 <li>When you share an image, the iOS share sheet sends it to the app you choose. That app's own privacy policy then
 applies.</li>
+<li>When you tap "Share to Instagram Story", the image is handed to the Instagram app on your iPhone through the
+clipboard (on this device only, cleared after 5 minutes), and Instagram's privacy policy then applies.</li>
 </ul>
 
 <h2>Reminders</h2>
@@ -41,8 +43,8 @@ Crashlytics. They collect:</p>
 <ul>
 <li><strong>App usage events</strong>: opening the app, which screen is shown, viewing and using a template (its
 ID, style and collection), how many photos you picked, which editing tools you used, finishing an export (its
-format), tapping Share (not where you share to), and asking for a seasonal reminder. Firebase also records standard
-events such as first open, sessions, time in the app and app or iOS updates, plus the device language. Never the
+format), which share button you tapped ("Share to Instagram Story" or "More…", the share sheet), and asking for
+a seasonal reminder. Firebase also records standard events such as first open, sessions, time in the app and app or iOS updates, plus the device language. Never the
 photos themselves.</li>
 <li><strong>A random app-install identifier</strong> created by Firebase, so events from one install can be counted
 together. It is not your name, email, phone number or Apple ID, and a new one is created if you delete and
